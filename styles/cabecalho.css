@@ -1,0 +1,173 @@
+.cabecalho{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+
+}
+
+.container__header{
+    
+    width: 100%;
+    margin: auto;
+    background-color: #f8b133;
+    min-height: 100px;
+    
+    
+}
+
+.cabecalho__logo--container{
+    
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+}
+
+.cabecalho__logo{
+
+    display: block;
+    width: 90px;
+    height: 90px;
+    background-image: url(../images/logo-header-maior-01.png);
+    background-repeat: no-repeat;
+    text-indent: -9999999px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+      
+}
+
+.cabecalho__logo:hover{
+
+    background-image: url(../images/logo-header-maior-alpha-01.png);
+}
+
+
+.cabecalho__menu{
+    display: flex;
+    width: 80px;
+    justify-content: space-around;
+    flex-grow: 1;
+    background-color:#2e2d2c;
+    min-height: 3em;
+    align-items: center;
+    border-radius: 2px;
+    
+}
+
+.cabecalho__menu a{
+
+    display: block;
+    flex-grow: 1;
+    font-size: 0.7em;
+    color:white;
+    font-weight: bold;
+    text-align: center;
+    /* border: 1px solid yellow; */
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+        
+}
+
+.cabecalho__menu a:hover{
+    color: #f8b133;
+}
+
+.cabecalho__menu a:nth-child(-n+2){
+
+    border-right: 1px solid;
+}
+
+
+.banner{
+    height: 400px;
+    border: 1px solid red;
+   
+}
+
+.banner a{
+    background-image: url(../images/banner.jpg);
+    display: block;
+    height: 100%;
+    background-repeat: no-repeat;
+    text-indent: -99999px;
+    background-position: center;
+    background-size: 500%;
+
+}
+
+
+
+@media (min-width: 768px){
+
+
+
+    .cabecalho{
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        
+    
+    }
+    
+    .cabecalho__menu{
+
+        width: 40%;
+        flex-grow: 0;
+        height: 10px;
+        justify-content: flex-end;
+       
+    
+        }
+    
+    
+
+    .cabecalho__menu a{
+
+        flex-grow: 1;
+        align-content: center;
+        
+
+    }
+
+    .cabecalho__logo--container{
+
+        width: 100px;
+        height: 100%;
+   
+        margin-left: 1em;
+       
+    }
+
+    .banner a{
+      
+        background-size: 200%;
+    
+    }
+    
+
+}
+
+@media (min-width: 1200px){
+    .cabecalho{
+        
+        max-width: 1200px;
+        align-content: center;
+        margin: auto;
+    
+    }
+
+    .banner a{
+      
+        background-size: 150%;
+    
+    }
+   
+       
+    
+    }
+}
